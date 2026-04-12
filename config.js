@@ -2,10 +2,10 @@ const fs = require('fs'),
       dotenv = fs.existsSync('config.env') ? require('dotenv').config({ path: '/.env' }) : undefined,
       convertToBool = (text, fault = 'true') => text === fault;
 
-global.session = "https://stark-md-pair.onrender.com";
+global.session = "https://stark-pair.vercel.app";
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || "STARK-MD~hjVKWGwbZ+4wBpX3s4gIePwCUQlDafwcAAA==", // Add sess Id here especially when deploying on panels else use app.json and .env file...
+    SESSION_ID: process.env.SESSION_ID || "STARK-MD==", // Add sess Id here especially when deploying on panels else use app.json and .env file...
     SUDO_NUMBERS: process.env.SUDO_NUMBERS || "", // Add multiple numbers with country codes without (+), separated by comma
     ANTI_DELETE: process.env.ANTI_DELETE || "true", // ✅ only ONE, default = true
     AUTO_STATUS_VIEWS: process.env.AUTO_STATUS_VIEWS || "true",
@@ -15,7 +15,7 @@ module.exports = {
     STATUS_REPLY_MSG: process.env.STATUS_REPLY_MSG || "✅️ STATUS VIEWED BY STARK-MD", // Custom message
     MODE: process.env.MODE || "public", // Options: private, public, inbox, groups
     TGTOKEN:process.env.TGTOKEN || "7672295852:AAG0SEMHbM1jhkpodxHspJuVT5tiAhXPPpI",
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "923199471258", // Only 1 owner number here, others add to sudo numbers
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "923437393822", // Only 1 owner number here, others add to sudo numbers
     OWNER_NAME: process.env.OWNER_NAME || "𓂃ᷱ᪳𝐀ɭīī 𝐈𝐍𝅦𝐗īī𝐃𝐄^᪲᪲᪲輪", // Custom name
     PACK_AUTHOR: process.env.PACK_AUTHOR || "", // Custom
     PACK_NAME: process.env.PACK_NAME || "",
